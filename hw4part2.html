@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6035FXNYJG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6035FXNYJG');
+</script>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="description" content="working with grids in CNIT 132A">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@600&family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Grid</title>
+  <style> 
+    .flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align:center;
+        }
+header{
+background-color: coral;
+text-align: center;
+padding: 10px;
+}
+.flex-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aside-1,
+.main,
+.extra,
+.aside-2 {
+    flex: 1;
+    width: 20%; 
+    padding: 20px;
+    box-sizing: border-box;
+     }
+     .aside-1{
+       background-color:yellow;
+       color:black;
+     }
+     .extra{
+       background-color:#d15eaf;
+       color:blue;
+     }
+     .aside-2{
+       background-color:#f7c6e9;
+       color: black; 
+     }
+.main{
+    background-color: #00008b;
+  color:white;
+   
+}
+.footer-flex{
+  background-color:green;
+}
+    </style>   
+</head>
+<body>
+  
+<br> 
+ <div class="flex-container">
+    <header class="header-hw4">
+        <p>Name of Company</p>
+    </header>
+
+    <div class="flex-container-2">
+        <aside class="aside-1">
+            <p>This is the aside 1</p>
+        </aside>
+
+        <main class="main">
+            <p>This is the main article of my page! This is the main content of the page. In a 3-column layout, it should be shown in the middle between the aside 1 and aside 2!</p>
+        </main>
+
+        <div class="extra">
+            <p>This column was created to have some content as a challenge to adapt the old 3-column layout to a 4-column layout</p>
+        </div>
+
+        <aside class="aside-2">
+            <p>This is the aside 2</p>
+        </aside>
+    </div>
+
+    <footer class="footer-flex">
+        <p>This is the footer<br>Copyright &copy; 2017</p>
+    </footer>
+</div>
+    <br>
+  <br>
+  <br>
+    
+  <a href="assignments.html" class="button">Home</a>
+  
+  </body>
+</html>
