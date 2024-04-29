@@ -5,6 +5,84 @@
   <meta name="description" content="airplane flying with CSS3 animation">
   <meta charset="utf-8">
   <link rel="stylesheet" href="hw7.css">
+  <style>
+   body {
+   * { background-color:#C0DEED;}
+
+#sky {
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+text-align:center;
+background: url(clouds.png) center top repeat-x;
+padding-top:300px;
+padding-bottom:10px;
+animation: move-sky 30s linear infinite;
+}
+@keyframes move-sky{
+    0% {
+        background-position: center top; }
+100% {
+    background-position: left -2000px top;
+}
+}
+.airline{
+    text-align:center;
+    position: absolute;
+    left: 50%;
+    top: 50px; 
+    transform: translate(-50%, -50%);
+    font-size:  3em;
+    color: black;
+
+
+}
+
+img{
+    position: relative;
+    top: 180px;
+    animation: fly 15s linear infinite;
+}
+
+.banner{
+    position: absolute;
+    top: 275px;
+    right: 100%;
+    animation: banner-rotate 10s linear infinite; 
+    z-index: 2;
+    font-size: 2em;
+
+}
+
+@keyframes banner-rotate {
+    0% {
+        right: 100%;
+        transform: rotate(-10deg);
+        }
+    60% {
+        right: 0;
+        transform: translateX(0%);
+        }
+    100% {
+        right: 50%;
+        transform: rotate(10deg);
+    }
+}
+@media (prefers-reduced-motion) { 
+    #sky {
+        animation: none;
+    }
+    img {
+        animation: none; 
+    }
+    .banner {
+        animation: none;
+    }
+}
+   }
+</style>
 </head>
 <body>
   <div id="sky">
