@@ -6,44 +6,46 @@
     margin: auto;
     font-family: "Roboto", sans-serif;
     background:  white;
-    border: solid 10px #967BB6;
-    font-family: 'Borel', cursive;
-    background-color: whitesmoke;
-    height: 130vh;}
+    background-color: #EDC7B7;
+    height: 100vh;}
           
            /*Nav Bar CSS*/  
-    nav{ 
+  
+    .nav-bar {
     display: flex;
-    justify-content: space-around;
+    justify-content: left; 
+    padding: 20px;
+    
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: white; 
-    background-color: clear;
-    min-height: 8vh;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-                
-    }
-    .nav-links{
-    display: flex;   
-    justify-content: right;
-    background-color: none;
-    width: 80%;
-    text-indent: 50px;
-    }
-            
-    .nav-links li{
-    list-style: none;
-    }
-            
-    .nav-links a{
-    color: black;
+    text-align: center;
+    margin: 0 30px; 
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    color: #123C69;
+    border: 2px solid #AC3B61;
+    border-radius: 50%; 
     text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    }
-    .fa{
-      padding: 10px;
-    }      
+    font-size: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #EDC7B7;
+    color: #AC3B61;
+}
+      
            /*Nav Bar CSS Ends*/
     
         /*future logo will go here*/
@@ -78,12 +80,30 @@
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     }
+.name-first{
+ white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 80px;
+    color: #123c69; 
+  text-align: left;
+}
     .name{
     white-space: nowrap;
-    font-weight: bold;
-    font-family: 'Noto Serif Vithkuqi';
-    font-size: 50px;
+   font-family: "Satisfy", cursive;
+    font-size: 120px;
+    color: #123c69;
+      text-align: center;
+      padding: 30px;
+      margin-left: 100px
     }
+.name-end{
+  font-family: 'Poppins';
+ color: #123c69;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 80px;
+}
     /*Right Column*/
     
      .column.right {
@@ -94,23 +114,16 @@
     }
     .img1{
     
-    width:400px;
-    height:600px;
-    border-radius:100px;
-    border-style: dashed;
-    border-color: magenta;
-    background: purple; 
-    box-shadow: 0 0 100px purple; 
+    width:600px;
+    height:800px;
+    border-radius:150px;
+    border-style: inset;
+    border-color: #123C69;
+    background: #AC3B61; 
+    box-shadow: 0 0 100px #AC3B61; 
     
     }
-    .footer{
-      margin-top: 100px;
-    padding: 30px;
-    justify-content:center;
-    display: flex;
-    text-align: center;
-    }
-    
+
     
     /* next for projects*/
     
@@ -244,64 +257,191 @@
     
 
     /* assignments */
-.middleintro-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-}
 
-.center-container {
-     font-family: 'Poppins', sans-serif;
+header{
+    margin-top: 100px;
+    justify-content:center;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
-.intro {
-    justify-content: center;
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 30px;
-    max-width: 900px;
+:root {
+  --border-width: 10px;
+  --border-color: #EDC7B7;
 }
 
-.container-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 50px auto; /* Center the container and add some space around it */
+@media screen and (min-width: 1501px) {
+  .list-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.box {
-    flex: 0 0 calc(30% - 20px); 
-    margin: 10px;
-    padding: 20px;
-   background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    border-radius: 10px;
-    text-align: center;
+.list-box {
+  padding-top: var(--border-width);
+  display: grid;
+  gap: var(--border-width);
+  background-color: var(--border-color);
+  padding: 20px; 
+  margin: 0; 
+  list-style: none; 
 }
-.assign {
-     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-  text-align: center;
-     list-style: none;
+
+.list-box li {
+  background: #EEE2DC; 
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: grid;
+  gap: 20px;
+  align-items: start;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.link{
-  font-size: 20px;
+
+.list-box li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
+.list-box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-box a:hover {
+  color: #EDC7B7;
+}
+
+.list-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.list-image img:hover {
+  transform: scale(1.05);
+}
+
+.links a {
+  display: inline-block;
+  padding: 5px 5px;
+  background: var(--border-color);
+  color: white;
+  border-radius: 3px;
+  font-size: 0.9em;
+  margin-top: 10px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.links a:hover {
+  background-color: #d4a68c;
+  color: #EEE2DC;
+}
+
+li ul {
+  list-style: none;
+}
+
+small {
+  font-size: 15px; 
+  font-weight: 400;
+  color: black;
+}
+
 
 /* contact-me.html*/
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+    background-color: #AC3B61;
+    border-radius: 80px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.image-contact{
+  padding: 30px;
+  border-radius: 35%;
+}
+
+.contact-page{
+  font-size: 50px;
+  margin-right: 200px;
+}
 
 .contact{
   text-align: center;
   padding: 50px;
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: white;  
+}
+
+.footer-contact{
+  font-size: 50px;
+  margin-right: 200px;
+  color: white;
   
 }
+.contact-description{
+  color:white;
+}
+/* foooter for index*/
+.footer{
+margin-top: 100px;
+  padding: 30px;
+    display: flex;
+  margin-right: 200px;
+}
+/* SEO */
+.container-seo {          
+   display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 100px;
+    background-color: whitesmoke;
+    border-radius: 80px;
+    margin: 20px auto;
+  max-width: 1800px;
+    font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: bold;
+        }
+        .seo-text {
+            flex: 1;
+            min-width: 300px;
+             padding-top:150px;
+          margin-left: 150px;}
+        .keyword-table {
+            flex: 1;
+            min-width: 300px;
+          padding-top:150px;
+            margin-right: 150px;
+        }
+        .seo-text h2 ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 2px solid #123C69;
+            padding: 8px;
+            text-align: left;
+         
+        }
+        th {
+            background-color: #123C69;
+          color:white;
+        }
+.seo{
+  color:#123C69;
+  font-size:30px;
+}
+
+
+
