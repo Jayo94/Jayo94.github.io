@@ -1,447 +1,177 @@
-*{  margin: 0px;
-    padding: 0px;
-     }
-            
-    body { 
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-    background:  white;
-    background-color: #EDC7B7;
-    height: 100vh;}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6035FXNYJG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6035FXNYJG');
+    </script>
+    <script src="https://kit.fontawesome.com/a26a3f0e5f.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Poppins Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@600&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <!-- Satisfy Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My SWE Portfolio</title>
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-bar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-button" alt="This is the home button of page">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+            <div class="nav-container">
+                <a href="projects.html" class="nav-button" alt="This is the Project page it is under construction">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </a>
+            </div>
+            <div class="nav-container">
+                <a href="assignments.html" class="nav-button" alt="This is the assignment page">
+                    <i class="fa-solid fa-code"></i>
+                </a>
+            </div>
+            <div class="nav-container">
+                <a href="contact-me.html" class="nav-button" alt="this is the contact page">
+                    <i class="fa-solid fa-address-book"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <hr>
+  <br>
+    <br>
+    <br>
+    <div class="container-seo">
+        <div class="seo-text">
+            <h1 style="text-align: center; font-size:40px; font-weight:bold;"><u>SEO Strategies</u></h1>
+            <h2>Tools Used for Keyword Research</h2>
+            <ul class="seo">
+                
+               <li><a class="seo" href="https://tools.wordstream.com">WORDSTREAM</a></li>
+              <li><a class="seo" href="https://www.semrush.com/signup">SEMRUSH</a></li>
+              <li><a class="seo" href="https://keywordtool.io">keywordtool.io</a></li>
+              <li><a class="seo" href="https://backlinko.com/">Backlinko</a></li>
+                
+            </ul>
           
-           /*Nav Bar CSS*/  
+            <h1 style="text-align: center; font-size:40px; font-weight:bold;"><u>Researched Keywords</u></h1>
+            <ul>
+              <p>
+                 The following research keywords were used in the respective pages:
+              </p>
+                <h4>
+                  
+              <h3>Index Page:</h3>
+              <p>
+                 Meta description:   <br><br>Explore the portfolio of an aspiring front-end developer showcasing HTML CSS projects and creative web design.
+              </p>
+              <p>
+                 Title: Jennifer Torres Orellana - Aspiring Front-End Developer
+              </p>
+              <p>
+                 Heading: Explore the portfolio of an aspiring front-end developer 
+              </p>
+           
+                  
+                  <br> 
+                  <br>
+                  <h3>Assignment Page:</h3>
+                  <p>
+                     
+                  Meta description: "Here are advanced HTML assignments showcasing my web development skills and responsive design techniques."</p>
+<p>
+   
+                  Title tag: "Jennifer Torres Orellana - HTML CSS Projects and Assignments"</p>
+<p>
+   
+                 Heading: "CNIT 132 Advanced HTML Assignments" </p>
+<p>
   
-    .nav-bar {
-    display: flex;
-    justify-content: left; 
-    padding: 20px;
-    
-}
-
-.nav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 0 30px; 
-}
-
-.nav-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-    color: #123C69;
-    border: 2px solid #AC3B61;
-    border-radius: 50%; 
-    text-decoration: none;
-    font-size: 24px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-button:hover {
-    background-color: #EDC7B7;
-    color: #AC3B61;
-}
-      
-           /*Nav Bar CSS Ends*/
-    
-        /*future logo will go here*/
-    .logo{
-    color: rgb(226,226,226);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-    }
-    
-            /* Div for Content Start*/
-    .header-index{
-    margin-top: 120px;
-    padding: 40px;
-    }
-           /* Left column*/
-    .column {
-    float: left;
-    width: 5%;
-    }
-          
-    /* Middle column */
-    .column.middle {
-    margin: auto;
-    width: 40%;
-    padding: 0px 10px;
-    }
-    p { 
-    float: left;
-    text-align: left;
-    color:black;     
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    }
-.name-first{
- white-space: nowrap;
-    font-weight: bold;
-    font-family: 'Poppins';
-    font-size: 80px;
-    color: #123c69; 
-  text-align: left;
-}
-    .name{
-    white-space: nowrap;
-   font-family: "Satisfy", cursive;
-    font-size: 120px;
-    color: #123c69;
-      text-align: center;
-      padding: 30px;
-      margin-left: 100px
-    }
-.name-end{
-  font-family: 'Poppins';
- color: #123c69;
-  font-size: 25px;
-  font-weight: bold;
-  margin-left: 80px;
-}
-    /*Right Column*/
-    
-     .column.right {
-    margin: auto;
-    width: 25%;
-    padding: 0px 10px;
-    
-    }
-    .img1{
-    
-    width:600px;
-    height:800px;
-    border-radius:150px;
-    border-style: inset;
-    border-color: #123C69;
-    background: #AC3B61; 
-    box-shadow: 0 0 100px #AC3B61; 
-    
-    }
-
-    
-    /* next for projects*/
-    
-    .main {
-        width: 100%;
-        height: auto;
-        display: grid;
-        place-items: center;
-        background-color: rgb(245, 245, 245);
-        padding: 50px 0;
-    }
-    .main .head {
-        font-size: 29px;
-        color: rgba(91, 14, 216, 0.767);
-        position: relative;
-        margin-bottom: 100px;
-        font-weight: 500;
-    }
-    .main .head::after {
-        content: " ";
-        position: absolute;
-        width: 50%;
-        height: 3px;
-        left: 50%;
-        bottom: -5px;
-        transform: translateX(-50%);
-        background-image: linear-gradient(to right, rgba(91, 14, 216, 0.767), rgba(238, 12, 200, 0.747));
-    }
-    
-    .container {
-        width: 70%;
-        height: auto;
-        margin: auto 0;
-        position: relative;
-    }
-    .container ul {
-        list-style: none;
-    }
-    .container ul::after {
-        content: " ";
-        position: absolute;
-        width: 2px;
-        height: 100%;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-        background-image: linear-gradient(to bottom, rgba(91, 14, 216, 0.767), rgba(238, 12, 200, 0.747));
-    }
-    .container ul li {
-        width: 50%;
-        height: 325px;
-        padding: 15px 20px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
-        position: relative;
-        margin-bottom: 30px;
-        z-index: 99;
-    }
-    .container ul li:nth-child(4) {
-        margin-bottom: 0;
-    }
-    .container ul li .circle {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #e100ff7a;
-        top: 0;
-        display: grid;
-        place-items: center;
-    }
-    .circle::after{
-        content: ' ';
-        width: 12px;
-        height: 12px;
-        background-color: #7f00ff;
-        border-radius: 50%;
-    }
-    ul li:nth-child(odd) .circle {
-        transform: translate(50%, -50%);
-        right: -30px;
-    }
-    ul li:nth-child(even) .circle {
-        transform: translate(-50%, -50%);
-        left: -30px;
-    }
-    ul li .date {
-        position: absolute;
-        width: 130px;
-        height: 33px;
-        background-image: linear-gradient(purple, pink);
-        border-radius: 15px;
-        top: -45px;
-        display: grid;
-        place-items: center;
-        color: #ffffff;
-        font-size: 13px;
-        box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
-    }
-    .container ul li:nth-child(odd) {
-        float: left;
-        clear: right;
-        text-align: right;
-        transform: translateX(-30px);
-    }
-    ul li:nth-child(odd) .date {
-        right: 20px;
-    }
-    .container ul li:nth-child(even) {
-        float: right;
-        clear: left;
-        transform: translateX(30px);
-    }
-    ul li .heading {
-        font-size: 17px;
-        color: rgb(91, 14, 216);
-    }
-    ul li p {
-        font-size: 13px;
-        color: #666666;
-        line-height: 18px;
-        margin: 6px 0 4px 0;
-    }
-    ul li a {
-        font-size: 13px;
-        text-decoration: none;
-        color: rgb(18, 54, 214);
-        transition: all 0.3s ease;
-    }
-    
-
-    /* assignments */
-
-header{
-    margin-top: 100px;
-    justify-content:center;
-    display: flex;
-    text-align: center;
-}
-:root {
-  --border-width: 10px;
-  --border-color: #EDC7B7;
-}
-
-@media screen and (min-width: 1501px) {
-  .list-box {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.list-box {
-  padding-top: var(--border-width);
-  display: grid;
-  gap: var(--border-width);
-  background-color: var(--border-color);
-  padding: 20px; 
-  margin: 0; 
-  list-style: none; 
-}
-
-.list-box li {
-  background: #EEE2DC; 
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  display: grid;
-  gap: 20px;
-  align-items: start;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.list-box li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.list-box a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.list-box a:hover {
-  color: #EDC7B7;
-}
-
-.list-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  transition: transform 0.2s;
-}
-
-.list-image img:hover {
-  transform: scale(1.05);
-}
-
-.links a {
-  display: inline-block;
-  padding: 5px 5px;
-  background: var(--border-color);
-  color: white;
-  border-radius: 3px;
-  font-size: 0.9em;
-  margin-top: 10px;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.links a:hover {
-  background-color: #d4a68c;
-  color: #EEE2DC;
-}
-
-li ul {
-  list-style: none;
-}
-
-small {
-  font-size: 15px; 
-  font-weight: 400;
-  color: black;
-}
-
-
-/* contact-me.html*/
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 100px;
-    background-color: #AC3B61;
-    border-radius: 80px;
-    margin: 20px auto;
-    max-width: 1000px;
-}
-
-.image-contact{
-  padding: 30px;
-  border-radius: 35%;
-}
-
-.contact-page{
-  font-size: 50px;
-  margin-right: 200px;
-}
-
-.contact{
-  text-align: center;
-  padding: 50px;
-  font-family: 'Poppins';
-  font-size: 20px;
-  color: white;  
-}
-
-.footer-contact{
-  font-size: 50px;
-  margin-right: 200px;
-  color: white;
-  
-}
-.contact-description{
-  color:white;
-}
-/* foooter for index*/
-.footer{
-margin-top: 100px;
-  padding: 30px;
-    display: flex;
-  margin-right: 200px;
-}
-/* SEO */
-.container-seo {          
-   display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 30px 100px;
-    background-color: whitesmoke;
-    border-radius: 80px;
-    margin: 20px auto;
-  max-width: 1800px;
-    font-family: 'Poppins';
-  font-size: 20px;
-  font-weight: bold;
-        }
-        .seo-text {
-            flex: 1;
-            min-width: 300px;
-             padding-top:150px;
-          margin-left: 150px;}
-        .keyword-table {
-            flex: 1;
-            min-width: 300px;
-          padding-top:150px;
-            margin-right: 150px;
-        }
-        .seo-text h2 ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 2px solid #123C69;
-            padding: 8px;
-            text-align: left;
-         
-        }
-        th {
-            background-color: #123C69;
-          color:white;
-        }
-.seo{
-  color:#123C69;
-  font-size:30px;
-}
-
-
-
+                  Hyperlink text: "Assignment #1: HTML CSS Projects"</p>
+                  
+                  <p>Image alt attribute: "detail for HTML CSS projects assignment"</p>
+                  
+            </ul>
+        </div>
+      <br>
+        <div class="keyword-table">
+            <h1 style="text-align: center; font-size:40px; font-weight:bold;"><u>Keyword Analysis</u></h1>
+          <br>
+            <table>
+                <tr>
+                    <th>Keyword</th>
+                    <th>Search Volume</th>
+                    <th>Competition Level</th>
+                </tr>
+                <tr>
+                    <td>Front-End Developer</td>
+                    <td>12,100</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>Web Dev Portfolio</td>
+                    <td>1,900</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>HTML CSS Projects</td>
+                    <td>1,300</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>UX Design</td>
+                    <td>74,000</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>Responsive Web Design</td>
+                    <td>6,600</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>Website Development Projects</td>
+                    <td>1,000</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>San Leandro California</td>
+                    <td>60,500</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>Creative Web Design</td>
+                    <td>1,000</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>Beginner Web Design</td>
+                    <td>880</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>90,500</td>
+                    <td>Low</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
