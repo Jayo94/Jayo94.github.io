@@ -1,0 +1,110 @@
+body {
+    font-family: "Inknut Antiqua", serif;
+    background-color: #EEC0C8;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 45px;
+    color: #2c3e50;
+    text-align: center;
+}
+h2{
+    font-size: 45px;
+    color: #2c3e50;
+    text-align: left;
+}
+
+
+.one {
+    background-color: #F9629F;
+    color: white;
+    padding: 200px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 450px;
+    height: 450px;
+    background-color: #FFFFFF; 
+    border-radius: 50%; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.two {
+  
+}
+
+.name {
+    padding: 200px;
+    font-family: "Inknut Antiqua", serif;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.box {
+    background-color: #DAD2D8;
+    color: black;
+    padding: 30px;
+    width: 800px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+.bubbles-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.bubble {
+    width: 151px;
+    height: 43px;
+    background-color: #FFFFFF;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+
+.bubble h1 {
+    font-size: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.bubble a {
+    text-decoration: none;
+    color: inherit; 
+}
